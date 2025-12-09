@@ -271,6 +271,11 @@ input[type="text"] {
     min-height: 30px;
 }
 
+/*#location {
+    display: flex;
+    justify-content: center;
+}*/
+
 /* Ubicación */
 .map-container {
     width: 100%;
@@ -280,6 +285,177 @@ input[type="text"] {
     border-radius: 10px;
     overflow: hidden;
 }
+
+.notice-section,
+.gallery-section {
+    padding: 80px 20px;
+    background-color: var(--bg-color);
+}
+
+/* ============================================================
+   SECCIÓN DE AVISOS IMPORTANTES
+   ============================================================ */
+.notices-wrapper {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.notice-card {
+    background: var(--white);
+    border-left: 6px solid var(--primary-color);
+    padding: 25px 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(25px);
+    animation: noticeFade 0.8s ease forwards;
+}
+
+.notice-card:nth-child(1) { animation-delay: 0.1s; }
+.notice-card:nth-child(2) { animation-delay: 0.25s; }
+.notice-card:nth-child(3) { animation-delay: 0.4s; }
+.notice-card:nth-child(4) { animation-delay: 0.55s; }
+
+@keyframes noticeFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.notice-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.25);
+}
+
+.notice-icon {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.notice-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+}
+
+.notice-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* ============================================================
+   SLIDER / GALERÍA ELEGANTE
+   ============================================================ */
+.slider {
+    position: relative;
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+}
+
+.slides {
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+}
+
+/* Fade effect */
+.fade {
+    animation-name: fadeEffect;
+    animation-duration: 1.3s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Botones de navegación */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    margin-top: -22px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.3s;
+    user-select: none;
+    border-radius: 50%;
+    background-color: rgba(44, 62, 80, 0.7); /* azul nocturno translúcido */
+}
+
+.prev:hover, .next:hover {
+    background-color: var(--primary-color);
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+/* Indicadores inferiores */
+.dots {
+    margin-top: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+}
+
+.active, .dot:hover {
+    background-color: var(--primary-color);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+    .notice-card {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .prev, .next {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
 
 /* Footer */
 footer {
