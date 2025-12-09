@@ -1,246 +1,242 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Boda Rubén & Edith</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Tailwind -->
-  <!--script src="https://cdn.tailwindcss.com"></script-->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <!-- Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-
-  <!-- AOS (scroll animations) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .navy { color: #1F2A44; }
-    .bg-navy { background-color: #1F2A44; }
-
-
-     header {
-      min-height: 100vh;
-      background: linear-gradient(rgba(10,31,68,.5), rgba(10,31,68,.5)),
-                   url("hero.jpg") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-
-    header .content {
-      max-width: 900px;
-      padding: 20px;
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 4rem;
-      letter-spacing: 4px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.3rem;
-      margin-bottom: 40px;
-    }
-
-    .btn {
-      text-decoration: none;
-      border: 2px solid var(--gold);
-      color: white;
-      padding: 12px 25px;
-      border-radius: 30px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: var(--gold);
-      color: black;
-    }
-
-    section {
-      padding: 80px 10%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Edith & Rubén</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
+<body>
 
-<body class="bg-white text-gray-800">
+    <div id="welcome-screen">
+        <!--div class="welcome-content">
+            <p>Nos casamos</p>            
+            <h1>Edith & Rubén</h1>
+            <p>10 . Enero . 2026</p>
+            <button id="enter-btn" class="enter-btn">Abrir Invitación</button>
+        </div-->
+        <div class="welcome-content">
+    
+            <p style="font-family: 'Playfair Display', serif; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; color: var(--secondary-color);">
+                Con gran ilusión <br> ¡Nos casamos!
+            </p>
 
-<!-- HERO / PORTADA -->
-<header>
-  <div class="content" data-aos="fade-up">
-    <h1>Rubén & Edith</h1>
-    <p>“Lo que Dios ha unido, que no lo separe el hombre” – Marcos 10:9</p>
-    <a class="btn" href="#lugar">Ver detalles</a>
-  </div>
-</header>
+            <h1>Edith & Rubén</h1>
+            <p style="font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.8; color: var(--secondary-color);">
+                “Lo que Dios ha unido, que no lo separe el hombre” – Marcos 10:9
+            </p>
+            <p style="font-family: 'Playfair Display', serif; font-size: 1.5rem; letter-spacing: 3px; margin-top: 20px; margin-bottom: 40px;">
+                10 . Enero . 2026
+            </p>
 
-<!-- SOBRE LOS NOVIOS -->
-<section id="nosotros">
-  <h2 data-aos="fade-right">Sobre nosotros</h2>
-  <div class="grid two">
-    <div data-aos="fade-up">
-      <p>
-        Este sitio está dedicado a celebrar un día muy especial en nuestras vidas.
-        Nos encantaría que formes parte de este momento tan importante.
-      </p>
-    </div>
-    <div data-aos="zoom-in">
-      <img src="novios-ejemplo.png" alt="Imagen representativa de los novios">
-    </div>
-  </div>
-</section>
-
-<!-- HERO -->
-<header class="min-h-screen flex items-center justify-center bg-white">
-  <div class="text-center" data-aos="fade-up">
-    <h1 class="text-5xl navy mb-4">Rubén & Edith</h1>
-    <p class="text-lg tracking-wide">10 de Enero</p>
-    <p class="italic mt-2 text-gray-600">"Donde haya amor, hay vida"</p>
-  </div>
-</header>
-
-<!-- SECCIÓN NOVIOS -->
-<section class="py-20 px-6 bg-gray-50 text-center" data-aos="fade-up">
-  <h2 class="text-3xl navy mb-10">Los Novios</h2>
-  <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-    <div>
-      <img src="https://placehold.co/400x400" class="rounded-2xl shadow mx-auto" />
-      <h3 class="text-xl mt-4 navy">Rubén</h3>
-    </div>
-    <div>
-      <img src="https://placehold.co/400x400" class="rounded-2xl shadow mx-auto" />
-      <h3 class="text-xl mt-4 navy">Edith</h3>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN SALÓN -->
-<section class="py-20 px-6 bg-white text-center" data-aos="fade-up">
-  <h2 class="text-3xl navy mb-10">El Lugar</h2>
-  <p class="max-w-2xl mx-auto mb-6">Aquí podrás conocer el lugar donde compartiremos este día tan especial.</p>
-
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">    
-    <img src="https://placehold.co/400x300" class="rounded-xl shadow">
-    <img src="https://placehold.co/400x300" class="rounded-xl shadow">
-    <img src="https://placehold.co/400x300" class="rounded-xl shadow">
-  </div>
-
-  <a href="#" class="mt-8 inline-block text-white bg-navy px-6 py-3 rounded-full hover:opacity-80 transition">
-    Ver en Google Maps
-  </a>
-</section>
-
-<!-- ITINERARIO -->
-<section class="py-20 px-6 bg-gray-50" data-aos="fade-up">
-  <h2 class="text-3xl navy mb-12 text-center">Itinerario del Evento</h2>
-
-  <div class="max-w-4xl mx-auto space-y-6">
-    <div class="border-l-4 border-navy pl-4">
-      <h3 class="font-semibold navy">1:00 pm - 2:00 pm</h3>
-      <p>Recepción + Cocktail de bienvenida</p>
+            <button id="enter-btn" class="enter-btn">Abrir Invitación</button>
+        </div>
     </div>
 
-    <div class="border-l-4 border-navy pl-4">
-      <h3 class="font-semibold navy">2:00 pm - 3:00 pm</h3>
-      <p>Ceremonia Cristiana</p>
+    <div id="main-site">
+        
+        <div class="hero">
+            <div class="hero-text">
+                <h2>Edith & Rubén</h2>                
+                 <div style="max-width: 600px; margin: 20px auto; padding: 0 15px;">
+                    <p style="font-family: 'Montserrat', sans-serif; font-size: 1.1rem; line-height: 1.8; color: var(--secondary-color);">
+                        Porque los momentos más felices merecen ser compartidos con las personas especiales,
+                        tenemos el honor de invitarte a ti y a tu apreciable familia a celebrar nuestra unión
+                        y el comienzo de nuestra nueva vida juntos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="countdown-container">
+            <div id="countdown">
+                <div class="time-box"><span id="days">00</span><small>Días</small></div>
+                <div class="time-box"><span id="hours">00</span><small>Hs</small></div>
+                <div class="time-box"><span id="minutes">00</span><small>Min</small></div>
+                <div class="time-box"><span id="seconds">00</span><small>Seg</small></div>
+            </div>
+        </div>
+
+        <section id="itinerary">
+            <h2 class="section-title">Itinerario</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">1pm-2pm</div>
+                    <div class="timeline-icon"><i class="fas fa-glass-cheers"></i></div>
+                    <div class="timeline-content">
+                        <h3>Receipción & Cóctel de Bienvenida</h3>
+                        <p>Llegada de invitados y Bebidas de bienvenida</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">2:00pm</div>
+                    <div class="timeline-icon"><i class="fas fa-church"></i></div>
+                    <div class="timeline-content">
+                        <h3>Ceremonia Religiosa</h3>
+                        <p>Al interior del Salón SOHO</p>
+                    </div>
+                </div>                
+                <div class="timeline-item">
+                    <div class="timeline-time">3:00pm a 3:30pm</div>
+                    <div class="timeline-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="timeline-content">
+                        <h3>Sesión de Fotos</h3>
+                        <p>Salón Principal</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">21:00</div>
+                    <div class="timeline-icon"><i class="fas fa-music"></i></div>
+                    <div class="timeline-content">
+                        <h3>¡Fiesta!</h3>
+                        <p>Hasta que el cuerpo aguante</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tables">
+            <h2 class="section-title">Encuentra tu lugar</h2>
+            <p style="margin-bottom: 20px;">Escribe tu nombre para saber en qué mesa estás asignado.</p>
+            
+            <div class="guest-search">
+                <div class="search-box">
+                    <input type="text" id="guest-name" placeholder="Ej: Juan Pérez">
+                    <button class="search-btn" onclick="findTable()">Buscar</button>
+                </div>
+                <div id="result-area"></div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2 class="section-title">Ubicación</h2>
+            <p>Hacienda El Ensueño, Tlaxcala</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.578637049877!2d-98.2396386850953!3d19.29969018696014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd9806376543b%3A0x6b864a74395e865!2sTlaxcala%20Centro!5e0!3m2!1ses!2smx!4v1620000000000!5m2!1ses!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section style="background-color: #fff;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <i class="fas fa-tshirt" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Código de Vestimenta</h3>
+                    <p>Etiqueta Rigurosa / Formal</p>
+                    <small>Hombres: Traje oscuro | Mujeres: Vestido largo</small>
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <i class="fas fa-gift" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Regalos</h3>
+                    <p>Su presencia es nuestro mejor regalo.</p>
+                    <small>Si desean tener un detalle, dispondremos de un buzón de sobres en la recepción.</small>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Edith & Rubén</h2>
+            <p>¡Esperamos verte ahí!</p>
+            <a href="https://wa.me/5211234567890?text=Hola,%20confirmo%20mi%20asistencia%20a%20la%20boda" target="_blank" class="rsvp-btn">
+                <i class="fab fa-whatsapp"></i> Confirmar Asistencia
+            </a>
+            <br><br>
+            <small>&copy; 2025 Boda A&C. Hecho con amor.</small>
+        </footer>
+
     </div>
 
-    <div class="border-l-4 border-navy pl-4">
-      <h3 class="font-semibold navy">3:00 pm - 3:30 pm</h3>
-      <p>Sesión de fotos</p>
-    </div>
+    <script>
+        // 1. TRANSICIÓN DE ENTRADA
+        const enterBtn = document.getElementById('enter-btn');
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const mainSite = document.getElementById('main-site');
 
-    <div class="border-l-4 border-navy pl-4">
-      <h3 class="font-semibold navy">3:30 pm - 7:30 pm</h3>
-      <p>Buffet + Música en vivo (3 sets)</p>
-    </div>
+        enterBtn.addEventListener('click', () => {
+            // Deslizar pantalla de bienvenida hacia arriba
+            welcomeScreen.style.transform = 'translateY(-100%)';
+            
+            // Mostrar contenido principal
+            mainSite.style.display = 'block';
+            setTimeout(() => {
+                mainSite.style.opacity = '1';
+                animateTimeline(); // Iniciar animaciones de scroll
+            }, 500);
+        });
 
-    <div class="border-l-4 border-navy pl-4">
-      <h3 class="font-semibold navy">8:30 pm</h3>
-      <p>Vals + Corte del pastel + Brindis</p>
-    </div>
+        // 2. CUENTA REGRESIVA (Configura la fecha aquí)
+        const weddingDate = new Date("Jan 10, 2026 14:00:00").getTime();
 
-    <div class="border-l-4 border-navy pl-4">
-      <h3 class="font-semibold navy">10:00 pm</h3>
-      <p>Fin del evento</p>
-    </div>
-  </div>
-</section>
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
 
-<!-- MESAS -->
-<section class="py-20 px-4 bg-white text-center" data-aos="fade-up">
-  <h2 class="text-3xl navy mb-10">Asignación de mesas</h2>
-  <p class="mb-6">Busca tu nombre para conocer tu mesa asignada</p>
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  <input 
-    type="text" 
-    placeholder="Buscar nombre..."
-    class="border px-4 py-2 rounded w-full max-w-md mb-8"
-    onkeyup="filterGuests(this.value)"
-  />
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
 
-  <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto" id="guests-table">
-    <div class="border p-4 rounded shadow">
-      <h3 class="navy font-semibold">Mesa 1</h3>
-      <ul class="mt-2">
-        <li>Juan Pérez</li>
-        <li>María López</li>
-      </ul>
-    </div>
-    <div class="border p-4 rounded shadow">
-      <h3 class="navy font-semibold">Mesa 2</h3>
-      <ul class="mt-2">
-        <li>Ejemplo 1</li>
-        <li>Ejemplo 2</li>
-      </ul>
-    </div>
-  </div>
-</section>
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById("countdown").innerHTML = "¡Es hoy!";
+            }
+        }, 1000);
 
-<!-- GALERÍA -->
-<section class="py-20 px-6 bg-gray-50 text-center" data-aos="fade-up">
-  <h2 class="text-3xl navy mb-8">Momentos Especiales</h2>
+        // 3. BUSCADOR DE INVITADOS (Base de datos simulada)
+        const guests = [
+            { name: "juan perez", table: "Mesa 1" },
+            { name: "maria gonzalez", table: "Mesa 2" },
+            { name: "pedro lopez", table: "Mesa 5" },
+            { name: "familia hernandez", table: "Mesa 8" },
+            // Añade más invitados aquí
+        ];
 
-  <div class="columns-2 md:columns-4 gap-4 max-w-6xl mx-auto">
-    <img class="mb-4 rounded-xl" src="https://placehold.co/300x500"/>
-    <img class="mb-4 rounded-xl" src="https://placehold.co/300x400"/>
-    <img class="mb-4 rounded-xl" src="https://placehold.co/300x600"/>
-    <img class="mb-4 rounded-xl" src="https://placehold.co/300x450"/>
-  </div>
-</section>
+        function findTable() {
+            const input = document.getElementById('guest-name').value.toLowerCase().trim();
+            const resultDiv = document.getElementById('result-area');
+            
+            if(input === "") {
+                resultDiv.innerText = "Por favor escribe un nombre.";
+                resultDiv.style.color = "red";
+                return;
+            }
 
-<!-- FOOTER -->
-<footer class="bg-navy text-white py-10 text-center">
-  <p>Rubén & Edith - 2025</p>
-  <p class="text-sm opacity-80">Sitio pensado con cariño para nuestros invitados</p>
-</footer>
+            // Buscar coincidencias parciales
+            const found = guests.find(guest => guest.name.includes(input));
 
-<!-- Scripts -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-<script>
-  AOS.init({ duration: 1200 });
+            if (found) {
+                resultDiv.innerHTML = `<span style="color: #2C3E50;">Hola ${found.name.toUpperCase()}, tu lugar es la:</span> <br> <span style="font-size: 2rem;">${found.table}</span>`;
+            } else {
+                resultDiv.innerText = "No encontramos tu nombre. Intenta escribir solo tu primer nombre o apellido.";
+                resultDiv.style.color = "#999";
+            }
+        }
 
-  gsap.from("header h1", { y: -50, opacity: 0, duration: 1.5 })
+        // 4. ANIMACIÓN AL HACER SCROLL
+        function animateTimeline() {
+            const items = document.querySelectorAll('.timeline-item');
+            
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.2 });
 
-  function filterGuests(value) {
-    const cards = document.querySelectorAll("#guests-table div");
-    value = value.toLowerCase();
-    cards.forEach(card => {
-      card.style.display = card.innerText.toLowerCase().includes(value) ? "block" : "none";
-    });
-  }
-</script>
-
+            items.forEach(item => {
+                observer.observe(item);
+            });
+        }
+    </script>
 </body>
 </html>

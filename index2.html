@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación de Boda</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy: #1c2233;
+      --ivory: #faf8f2;
+      --gold: #c2a46d;
+      --soft-gray: #6b6b6b;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      scroll-behavior: smooth;
+      background: var(--ivory);
+      color: var(--navy);
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 1px;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient( rgba(0,0,0,0.45), rgba(0,0,0,0.45) ), url('assets/portada-novios.png');
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-content {
+      animation: fadeUp 1.5s ease forwards;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 38px;
+      border: 1px solid var(--gold);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-top: 40px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    /* ITINERARIO */
+    .timeline {
+      margin-top: 40px;
+      border-left: 2px solid var(--gold);
+      padding-left: 25px;
+    }
+
+    .timeline-item {
+      margin-bottom: 30px;
+    }
+
+    .timeline-item span {
+      display: block;
+      color: var(--gold);
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    /* HERO SEGUNDA VISTA */
+    .couple-hero {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.6) ), url('assets/portada-novios.png');
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      margin-bottom: 60px;
+    }
+
+    /* GALERIA */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 16px;
+      transition: all 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* AVISO */
+    .notice {
+      background: var(--navy);
+      color: var(--white);
+      padding: 40px;
+      text-align: center;
+      border-radius: 20px;
+      margin-top: 40px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- VISTA 1 - INVITACIÓN DIGITAL -->
+<section class="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Edith & Rubén</h1>
+    <p>Nos casamos · 10 de Enero 2026</p>
+    <a href="#detalle" class="btn">Ver detalles</a>
+  </div>
+</section>
+
+<!-- VISTA 2 - INFORMACIÓN GENERAL -->
+<section id="detalle">
+
+  <div class="couple-hero" data-aos="zoom-in"></div>
+
+  <!-- NOVIOS Y UBICACIÓN -->
+  <div class="cards">
+    <div class="card" data-aos="fade-right">
+      <h3>Los Novios</h3>
+      <p>
+        Edith Méndez & Rubén Pérez<br/>
+        Con la bendición de Dios y nuestras familias te invitamos a celebrar este día inolvidable.
+      </p>
+    </div>
+
+    <div class="card" data-aos="fade-left">
+      <h3>Ubicación</h3>
+      <p>Salón Jardín SOHO</p>
+      <p>Lorem ipsum Dolor, Calle 32 San Migule Xochitl, #8765</p>
+    </div>
+  </div>
+
+  <!-- ITINERARIO -->
+  <div data-aos="fade-up">
+    <h2 style="margin-top:60px;">Itinerario</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span>5:00 PM</span>
+        Ceremonia
+      </div>
+      <div class="timeline-item">
+        <span>6:00 PM</span>
+        Sesión de fotos
+      </div>
+      <div class="timeline-item">
+        <span>7:00 PM</span>
+        Recepción y cena
+      </div>
+      <div class="timeline-item">
+        <span>8:30 PM</span>
+        Brindis y baile
+      </div>
+    </div>
+  </div>
+
+  <!-- MESAS -->
+  <div data-aos="fade-up">
+    <h2 style="margin-top:60px;">Mesas asignadas (ejemplo)</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mesa 1</h3>
+        <p>Ana López</p>
+        <p>Carlos López</p>
+        <p>María Torres</p>
+      </div>
+
+      <div class="card">
+        <h3>Mesa 2</h3>
+        <p>José Martínez</p>
+        <p>Andrea Martínez</p>
+        <p>Invitado + acompañante</p>
+      </div>
+
+      <div class="card">
+        <h3>Mesa 3</h3>
+        <p>Familia Pérez</p>
+        <p>Amigos cercanos</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALERÍA -->
+  <div data-aos="fade-up">
+    <h2 style="margin-top:60px;">Galería de referencia</h2>
+    <div class="gallery">
+      <img src="assets/galeria-1.jpg" />
+      <img src="assets/galeria-2.jpg" />
+      <img src="assets/galeria-3.jpg" />
+    </div>
+  </div>
+
+  <!-- AVISO IMPORTANTE -->
+  <div class="notice" data-aos="zoom-in">
+    <h2>⏰ Aviso importante</h2>
+    <p>
+      El evento finaliza a las <strong>10:00 PM</strong>.<br>
+      Favor de considerar salir del salón al menos <strong>20 minutos antes</strong>.
+    </p>
+  </div>
+
+  <!-- DETALLES EXTRA -->
+  <div class="cards" style="margin-top:60px;">
+    <div class="card" data-aos="fade-up">
+      <h3>Dress Code</h3>
+      <p>Formal / Elegante</p>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <h3>Regalos</h3>
+      <p>Lluvia de sobres o transferencia bancaria</p>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <h3>Confirmación</h3>
+      <p>Favor de confirmar tu asistencia vía WhatsApp</p>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>Con amor, Edith & Rubén — 2026</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1200, once: true });
+</script>
+
+</body>
+</html>

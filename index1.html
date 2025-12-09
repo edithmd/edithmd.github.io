@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Boda | Invitación Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- ANIMACIONES -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- ESTILOS -->
+  <style>
+    :root {
+      --azul-marino: #0b1d3a;
+      --blanco: #ffffff;
+      --gris: #f5f5f5;
+    }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body {
+      background:var(--blanco);
+      color:var(--azul-marino);
+    }
+
+    h1, h2 {
+      font-family: 'Great Vibes', cursive;
+    }
+
+    /* HERO / PORTADA */
+    .hero {
+      background: url("assets/portada-novios.png") center/cover no-repeat;
+      height: 100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+      color:white;
+      text-align:center;
+    }
+
+    .overlay {
+      background: rgba(11,29,58,0.6);
+      position:absolute;
+      inset:0;
+    }
+
+    .hero-content {
+      position:relative;
+      z-index:2;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom:15px;
+    }
+
+    .hero p {
+      letter-spacing:3px;
+      margin-bottom:10px;
+    }
+
+    .container {
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      padding:80px 0;
+      text-align:center;
+    }
+
+    section {
+      padding:80px 0;
+    }
+
+    .azul {
+      background:var(--azul-marino);
+      color:white;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+      gap:30px;
+      margin-top:40px;
+    }
+
+    .card {
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .azul .card {
+      background:#162a4d;
+      color:white;
+    }
+
+    .card i {
+      font-size:35px;
+      margin-bottom:15px;
+    }
+
+    img {
+      width:100%;
+      border-radius:20px;
+    }
+
+    footer {
+      background:var(--azul-marino);
+      color:white;
+      padding:50px;
+      text-align:center;
+      font-size:14px;
+    }
+
+  </style>
+</head>
+<body>
+
+<!------------------- PORTADA ------------------->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="zoom-in">
+    <h1>Edith & Ruben</h1>
+    <p>Nuestra Boda</p>
+    <h3>10 de Enero 2025</h3>
+  </div>
+</section>
+
+<!------------------- NOVIOS ------------------->
+<section class="container">
+  <h2 data-aos="fade-up">Los Novios</h2>
+  <p data-aos="fade-up">
+    “Lo que Dios ha unido, que no lo separe el hombre” – Marcos 10:9
+  </p>
+
+  <div class="grid">
+    <div data-aos="fade-right">
+      <img src="assets/novia.jpg" alt="Novia">
+      <h3>Sofía</h3>
+      <p>Vestido blanco, elegancia y amor</p>
+    </div>
+    <div data-aos="fade-left">
+      <img src="assets/novio.jpg" alt="Novio">
+      <h3>Rubén</h3>
+      <p>Traje azul marino con sutiles líneas</p>
+    </div>
+  </div>
+</section>
+
+<!------------------- UBICACIÓN ------------------->
+<section class="azul">
+  <div class="container">
+    <h2 data-aos="fade-up">Ubicación</h2>
+    <div class="grid">
+      <div class="card" data-aos="zoom-in">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Salón Jardín Imperial</h3>
+        <p>Av. Ejemplo #123, Ciudad, Estado</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <i class="fas fa-clock"></i>
+        <h3>Hora</h3>
+        <p>5:00 PM</p>
+      </div>
+    </div>
+
+    <!-- MAPA -->
+    <div style="margin-top:40px" data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps?q=Mexico&output=embed"
+        width="100%"
+        height="300"
+        style="border:0; border-radius:20px;">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!------------------- ITINERARIO ------------------->
+<section class="container">
+  <h2 data-aos="fade-up">Itinerario del Evento</h2>
+
+  <div class="grid">
+    <div class="card" data-aos="fade-right">
+      <h3>5:00 PM</h3>
+      <p>Recepción de invitados</p>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <h3>6:00 PM</h3>
+      <p>Ceremonia</p>
+    </div>
+
+    <div class="card" data-aos="fade-left">
+      <h3>7:00 PM</h3>
+      <p>Cena y brindis</p>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <h3>10:00 PM <i class="fas fa-exclamation-circle"></i></h3>
+      <p>
+        El evento finaliza a las 10:00 PM.
+        <br>
+        Les pedimos considerar retirarse aproximadamente
+        <strong>20 minutos antes</strong> para cumplir con el cierre del salón.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!------------------- MESAS ------------------->
+<section class="azul">
+  <div class="container">
+    <h2 data-aos="fade-up">Asignación de Mesas</h2>
+
+    <div class="grid">
+      <div class="card" data-aos="zoom-in">
+        <h3>Mesa 1</h3>
+        <ul>
+          <li>Juan Pérez + Familia</li>
+          <li>Ana López + Acompañante</li>
+        </ul>
+      </div>
+
+      <div class="card" data-aos="zoom-in">
+        <h3>Mesa 2</h3>
+        <ul>
+          <li>Familia Hernández</li>
+          <li>Carlos Torres</li>
+        </ul>
+      </div>
+
+      <div class="card" data-aos="zoom-in">
+        <h3>Mesa 3</h3>
+        <ul>
+          <li>Amigos cercanos</li>
+          <li>Compañeros de trabajo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------------- GALERÍA ------------------->
+<section class="container">
+  <h2 data-aos="fade-up">Galería previa al evento</h2>
+
+  <div class="grid">
+    <img src="assets/salon.jpg" data-aos="zoom-in">
+    <img src="assets/recuerdo1.jpg" data-aos="zoom-in">
+    <img src="assets/recuerdo2.jpg" data-aos="zoom-in">
+    <img src="assets/recuerdo3.jpg" data-aos="zoom-in">
+  </div>
+</section>
+
+<!------------------- INFO EXTRA ------------------->
+<section class="azul">
+  <div class="container">
+    <h2 data-aos="fade-up">Código de Vestimenta</h2>
+    <p data-aos="fade-up">Formal / elegante (evitar blanco)</p>
+
+    <h2 data-aos="fade-up" style="margin-top:40px;">Confirmación</h2>
+    <p>Favor de confirmar asistencia con los novios</p>
+  </div>
+</section>
+
+<!------------------- FOOTER ------------------->
+<footer>
+  <p>Con amor, Rubén & Sofía</p>
+  <p>Gracias por ser parte de nuestro día ❤️</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
