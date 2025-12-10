@@ -238,38 +238,6 @@
             </div>
         </section>
 
-        
-        <section id="galeria-fotos" class="gallery-upload">
-            <div class="gallery-container">
-
-                <h2 class="section-title">📸 Comparte Tus Fotos</h2>
-                <p class="section-subtitle">
-                Te invitamos a compartir tus fotos del evento.  
-                ¡Gracias por ayudarnos a capturar momentos inolvidables!
-                </p>
-
-                <!-- BOTÓN PARA SUBIR FOTOS -->
-                <div class="upload-box">
-                <input 
-                    type="hidden"
-                    role="uploadcare-uploader"
-                    data-public-key="b16f111890756bd6cd15"
-                    data-multiple="true"
-                    data-images-only="true"
-                    data-preview-step="true"
-                    id="uploader"
-                />
-                </div>
-
-                <!-- GALERÍA -->
-                <div id="uploaded-gallery" class="image-gallery">
-                <!-- Las imágenes aparecerán aquí automáticamente -->
-                </div>
-
-            </div>
-        </section>
-
-
         <footer>
             <h2>Edith & Rubén</h2>
             <p>¡Esperamos verte ahí!</p>
@@ -328,11 +296,19 @@
 
         // 3. BUSCADOR DE INVITADOS (Base de datos simulada)
         const guests = [
-            { name: "juan perez", table: "Mesa 1" },
-            { name: "maria gonzalez", table: "Mesa 2" },
-            { name: "pedro lopez", table: "Mesa 5" },
-            { name: "familia hernandez", table: "Mesa 8" },
-            // Añade más invitados aquí
+            { name: "Humberto Cortez de Máximo", table: "Mesa 1"},
+            { name: "Efrén Rodríguez Calderón ", table: "Mesa 1"},
+            { name: "Erick Cortez Ortega", table: "Mesa 1"},
+            { name: "Anastacio Pérez Cervantes", table: "Mesa 1" },
+            { name: "Roberto Pérez Lara", table: "Mesa 2" },            
+            { name: "Noel Méndez Díaz", table: "Mesa 1" },
+            { name: "Aristeo Díaz Rivas", table: "Mesa 1" },
+            { name: "Saturnina Pérez Vázquez", table: "Mesa 1" },
+            { name: "Julio Díaz Rivas", table: "Mesa 1" },
+            { name: "Roberto Flores Gutiérrez", table: "Mesa 1" },
+            { name: "Adiel Altamirano Díaz ", table: "Mesa 1" },
+            { name: "Fredi Roldán Díaz ", table: "Mesa 1" },
+            { name: "Aristeo Díaz Durán", table: "Mesa 1" },
         ];
 
         function findTable() {
