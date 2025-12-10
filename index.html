@@ -98,7 +98,7 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">05:20 pm</div>
-                    <div class="timeline-icon"><i class="fas fa-music"></i></div>
+                    <div class="timeline-icon"><i class="fas fa-gamepad"></i></div>
                     <div class="timeline-content">
                         <h3>Dinamicas</h3>
                         <p>Dinamicas entre invitados y novios.</p>
@@ -106,21 +106,21 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">06:30 pm</div>
-                    <div class="timeline-icon"><i class="fas fa-music"></i></div>
+                    <div class="timeline-icon"><i class="fas fa-heart"></i></div>
                     <div class="timeline-content">
-                        <h3>Vals de los novios.</h3>
+                        <h3>Vals de los novios</h3>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">07:00 pm</div>
-                    <div class="timeline-icon"><i class="fas fa-music"></i></div>
+                    <div class="timeline-icon"><i class="fas fa-champagne-glasses"></i></div>
                     <div class="timeline-content">
                         <h3>Brindis & Pastel</h3>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-time">08:00 pm</div>
-                    <div class="timeline-icon"><i class="fas fa-music"></i></div>
+                    <div class="timeline-icon"><i class="fas fa-icons"></i></div>
                     <div class="timeline-content">
                         <h3>¡Fiesta!</h3>
                     </div>
@@ -141,57 +141,48 @@
             </div>
         </section>
 
-        <section id="location">            
-            <div class="location-wrapper">                
-                <h2 class="section-title">Ubicación</h2>
-                <h3>SOHO GARDEN SALON</h3>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.0622471033284!2d-98.34820178858364!3d19.23611874685007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd1b04f479b61%3A0x671c4bd98bdc30cf!2sSOHO%20GARDEN%20SALON!5e0!3m2!1ses-419!2smx!4v1765267872914!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section id="location" class="location-section">
+            <h2 class="section-title">Ubicación</h2>
+            <address>Dirección: SOHO GARDEN SALON, 22 de Junio.14 Xochitecatitla, 90712 San Miguel Xochitecatitla, Tlax.</address>
+            <div class="location-container">
+
+                <!-- MAPA -->
+                <div class="mapa-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.0622471033284!2d-98.34820178858364!3d19.23611874685007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd1b04f479b61%3A0x671c4bd98bdc30cf!2sSOHO%20GARDEN%20SALON!5e0!3m2!1ses-419!2smx!4v1765267872914!5m2!1ses-419!2smx"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
-            </div>
-        </section>
 
-         <section id="gallery" class="gallery-section">
-            <h2 class="section-title">Galería</h2>
-
-            <div class="slider">
-                <div class="slides">
-
+                <!-- SLIDE -->
+                <div class="slide-container">
                     <!-- IMAGEN 1 -->
-                    <div class="slide fade">
-                        <img src="img/salon1.jpg" alt="Salón 1">
-                    </div>
+                        <div class="slide fade">
+                            <img src="assets/hex.jpg" alt="Salón 1">
+                        </div>
 
-                    <!-- IMAGEN 2 -->
-                    <div class="slide fade">
-                        <img src="img/salon2.jpg" alt="Salón 2">
-                    </div>
+                        <!-- IMAGEN 3 -->
+                        <div class="slide fade">
+                            <img src="assets/hex2.jpg" alt="Salón 1">
+                        </div>
 
-                    <!-- IMAGEN 3 -->
-                    <div class="slide fade">
-                        <img src="img/salon3.jpg" alt="Salón 3">
-                    </div>
+                        <!-- IMAGEN 4 (extra) -->
+                        <div class="slide fade">
+                            <img src="assets/hex3.jpg" alt="Salón 1">
+                        </div>
 
-                    <!-- IMAGEN 4 (extra) -->
-                    <div class="slide fade">
-                        <img src="img/detalle1.jpg" alt="Detalle decorativo">
-                    </div>
+                        <div class="slide fade">
+                            <img src="assets/hex4.jpg" alt="Salón 1">
+                        </div>
 
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-
-                <!-- Controles -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-
-            <!-- Indicadores -->
-            <div class="dots" style="text-align:center;">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </section>
+        
 
 
         <section id="notices" class="notice-section">
@@ -202,7 +193,7 @@
                 <!-- Aviso 1 -->
                 <div class="notice-card">
                     <i class="fas fa-clock notice-icon"></i>
-                    <h3>Horario de Cierre del Evento</h3>
+                    <h3>Horario de Cierre</h3>
                     <p>
                         Les recordamos que el evento concluye a las <strong>11:00 PM</strong>.
                         Por respeto al personal del salón y la logística del cierre,
@@ -223,6 +214,16 @@
                     </p>
                 </div>
 
+                 <!-- Aviso extra de ejemplo -->
+                <div class="notice-card">
+                    <i class="fas fa-exclamation-circle notice-icon"></i>
+                    <h3>Niños</h3>
+                    <p>
+                        Los niños son bienvenidos, solo te pedimos mantenerlos cerca durante la ceremonia
+                        y actividades principales.
+                    </p>
+                </div>
+
                 <!-- Aviso 3 -->
                 <div class="notice-card">
                     <i class="fas fa-gift notice-icon"></i>
@@ -230,16 +231,6 @@
                     <p>
                         Su presencia es lo más valioso para nosotros.  
                         Si desean tener un detalle, contaremos con una mesa de regalos dentro del salón.
-                    </p>
-                </div>
-
-                <!-- Aviso extra de ejemplo -->
-                <div class="notice-card">
-                    <i class="fas fa-exclamation-circle notice-icon"></i>
-                    <h3>Niños</h3>
-                    <p>
-                        Los niños son bienvenidos, solo te pedimos mantenerlos cerca durante la ceremonia
-                        y actividades principales.
                     </p>
                 </div>
 
