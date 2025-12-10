@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/styles.css">    
+
 </head>
 <body>
 
@@ -105,14 +106,14 @@
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-time">06:30 pm</div>
+                    <div class="timeline-time">07:10 pm</div>
                     <div class="timeline-icon"><i class="fas fa-heart"></i></div>
                     <div class="timeline-content">
                         <h3>Vals de los novios</h3>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-time">07:00 pm</div>
+                    <div class="timeline-time">07:30 pm</div>
                     <div class="timeline-icon"><i class="fas fa-champagne-glasses"></i></div>
                     <div class="timeline-content">
                         <h3>Brindis & Pastel</h3>
@@ -230,12 +231,44 @@
                     <h3>Regalos / Detalles</h3>
                     <p>
                         Su presencia es lo más valioso para nosotros.  
-                        Si desean tener un detalle, contaremos con una mesa de regalos dentro del salón.
+                        Cualquier muestra de cariño adicional será recibida con todo nuestro amor y gratitud.
                     </p>
                 </div>
 
             </div>
         </section>
+
+        
+        <section id="galeria-fotos" class="gallery-upload">
+            <div class="gallery-container">
+
+                <h2 class="section-title">📸 Comparte Tus Fotos</h2>
+                <p class="section-subtitle">
+                Te invitamos a compartir tus fotos del evento.  
+                ¡Gracias por ayudarnos a capturar momentos inolvidables!
+                </p>
+
+                <!-- BOTÓN PARA SUBIR FOTOS -->
+                <div class="upload-box">
+                <input 
+                    type="hidden"
+                    role="uploadcare-uploader"
+                    data-public-key="b16f111890756bd6cd15"
+                    data-multiple="true"
+                    data-images-only="true"
+                    data-preview-step="true"
+                    id="uploader"
+                />
+                </div>
+
+                <!-- GALERÍA -->
+                <div id="uploaded-gallery" class="image-gallery">
+                <!-- Las imágenes aparecerán aquí automáticamente -->
+                </div>
+
+            </div>
+        </section>
+
 
         <footer>
             <h2>Edith & Rubén</h2>
@@ -248,6 +281,9 @@
         </footer>
 
     </div>
+
+    <!-- Uploadcare Script -->
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
 
     <script>
         // 1. TRANSICIÓN DE ENTRADA
@@ -268,7 +304,7 @@
         });
 
         // 2. CUENTA REGRESIVA (Configura la fecha aquí)
-        const weddingDate = new Date("Jan 10, 2026 14:00:00").getTime();
+        const weddingDate = new Date("Jan 10, 2026 13:00:00").getTime();
 
         const timer = setInterval(function() {
             const now = new Date().getTime();
@@ -364,6 +400,32 @@
 
             slides[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <script>
+        // ===========================
+        // MANEJAR SUBIDA DE IMÁGENES
+        // ===========================
+        const widget = uploadcare.Widget('#uploader');
+        const gallery = document.getElementById('uploaded-gallery');
+
+        widget.onUploadComplete(function (fileInfo) {
+            console.log(fileInfo)
+            // Si se suben varias fotos
+            if (fileInfo.count > 0) {
+                console.log('fotos cargadas')
+                for (let index = 0; index < fileInfo.count; index++) {
+                    addImageToGallery(fileInfo.cdnUrl, index);
+                }                
+            }
+        });
+
+        function addImageToGallery(url, groupPosition) {
+            const img = document.createElement("img");
+            img.src = url + "nth/"+groupPosition+"/";
+            img.className = "gallery-image fade-in";
+            gallery.prepend(img); // se añade al inicio
         }
     </script>
 </body>
