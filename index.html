@@ -131,7 +131,7 @@
 
         <section id="tables">
             <h2 class="section-title">Encuentra tu lugar</h2>
-            <p style="margin-bottom: 20px;">Escribe tu nombre para saber en qué mesa estás asignado.</p>
+            <p style="margin-bottom: 20px;">Escribe tu nombre y apellido para saber en qué mesa estás asignado.</p>
             
             <div class="guest-search">
                 <div class="search-box">
@@ -144,48 +144,47 @@
 
         <section id="location" class="location-section">
             <h2 class="section-title">Ubicación</h2>
-            <address>Dirección: SOHO GARDEN SALON, 22 de Junio.14 Xochitecatitla, 90712 San Miguel Xochitecatitla, Tlax.</address>
-            <div class="location-container">
+            <div style="background-color: white;padding: 20px 20px;border-radius: 14px;">
+                <address>Dirección: SOHO GARDEN SALON, 22 de Junio.14 Xochitecatitla, 90712 San Miguel Xochitecatitla, Tlax.</address>
+                <div class="location-container">                
+                    <!-- MAPA -->
+                    <div class="mapa-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.0622471033284!2d-98.34820178858364!3d19.23611874685007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd1b04f479b61%3A0x671c4bd98bdc30cf!2sSOHO%20GARDEN%20SALON!5e0!3m2!1ses-419!2smx!4v1765267872914!5m2!1ses-419!2smx"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
 
-                <!-- MAPA -->
-                <div class="mapa-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.0622471033284!2d-98.34820178858364!3d19.23611874685007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd1b04f479b61%3A0x671c4bd98bdc30cf!2sSOHO%20GARDEN%20SALON!5e0!3m2!1ses-419!2smx!4v1765267872914!5m2!1ses-419!2smx"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <!-- SLIDE -->
+                    <div class="slide-container">
+                        <!-- IMAGEN 1 -->
+                            <div class="slide fade">
+                                <img src="assets/hex.jpg" alt="Salón 1">
+                            </div>
+
+                            <!-- IMAGEN 3 -->
+                            <div class="slide fade">
+                                <img src="assets/hex2.jpg" alt="Salón 1">
+                            </div>
+
+                            <!-- IMAGEN 4 (extra) -->
+                            <div class="slide fade">
+                                <img src="assets/hex3.jpg" alt="Salón 1">
+                            </div>
+
+                            <div class="slide fade">
+                                <img src="assets/hex4.jpg" alt="Salón 1">
+                            </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                 </div>
-
-                <!-- SLIDE -->
-                <div class="slide-container">
-                    <!-- IMAGEN 1 -->
-                        <div class="slide fade">
-                            <img src="assets/hex.jpg" alt="Salón 1">
-                        </div>
-
-                        <!-- IMAGEN 3 -->
-                        <div class="slide fade">
-                            <img src="assets/hex2.jpg" alt="Salón 1">
-                        </div>
-
-                        <!-- IMAGEN 4 (extra) -->
-                        <div class="slide fade">
-                            <img src="assets/hex3.jpg" alt="Salón 1">
-                        </div>
-
-                        <div class="slide fade">
-                            <img src="assets/hex4.jpg" alt="Salón 1">
-                        </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-            </div>
+            </div>            
         </section>
         
-
-
         <section id="notices" class="notice-section">
             <h2 class="section-title">Avisos Importantes</h2>
 
@@ -299,16 +298,32 @@
             { name: "Humberto Cortez de Máximo", table: "Mesa 1"},
             { name: "Efrén Rodríguez Calderón ", table: "Mesa 1"},
             { name: "Erick Cortez Ortega", table: "Mesa 1"},
-            { name: "Anastacio Pérez Cervantes", table: "Mesa 1" },
-            { name: "Roberto Pérez Lara", table: "Mesa 2" },            
-            { name: "Noel Méndez Díaz", table: "Mesa 1" },
-            { name: "Aristeo Díaz Rivas", table: "Mesa 1" },
-            { name: "Saturnina Pérez Vázquez", table: "Mesa 1" },
-            { name: "Julio Díaz Rivas", table: "Mesa 1" },
-            { name: "Roberto Flores Gutiérrez", table: "Mesa 1" },
-            { name: "Adiel Altamirano Díaz ", table: "Mesa 1" },
-            { name: "Fredi Roldán Díaz ", table: "Mesa 1" },
-            { name: "Aristeo Díaz Durán", table: "Mesa 1" },
+            { name: "Anastacio Pérez Cervantes", table: "Mesa 2" },
+            { name: "Rosa Máría Pérez Lara", table: "Mesa 2" },
+            { name: "Noel Méndez Díaz", table: "Mesa 2" },
+            { name: "Antonino Díaz", table: "Mesa 3" },
+            { name: "Julio Díaz Rivas", table: "Mesa 3" },
+            { name: "Noel Méndez Pérez", table: "Mesa 3" },
+            { name: "Israel Vázquez", table: "Mesa 4" },
+            { name: "Rogelio Vázquez", table: "Mesa 4" },
+            { name: "Ariana Arciniega Huerta", table: "Mesa 4" },
+            { name: "Roberto Pérez Lara", table: "Mesa 5" },
+            { name: "Saturnina Pérez Vázquez", table: "Mesa 5" },
+            { name: "Lidia Díaz Pérez", table: "Mesa 5" },
+            { name: "Hugo Luna", table: "Mesa 5" },
+            { name: "Roberto Flores Gutiérrez", table: "Mesa 6" },
+            { name: "María Díaz Rivas", table: "Mesa 6" },
+            { name: "Sindy Altamirano Díaz", table: "Mesa 6" },
+            { name: "Karol", table: "Mesa 7" },
+            { name: "Isabel Serrano", table: "Mesa 7" },
+            { name: "Aristeo Díaz Rivas", table: "Mesa 8" },
+            { name: "Aristeo Díaz Durán", table: "Mesa 8" },
+            { name: "Adiel Altamirano Díaz ", table: "Mesa 9" },
+            { name: "Fredi Roldán Díaz ", table: "Mesa 9" },
+            { name: "Jesús Cano Pérez", table: "Mesa 10" },
+            { name: "Roberta Pérez Cervantes", table: "Mesa 10" },
+            { name: "Eliodoro Cano", table: "Mesa 10" },
+            { name: "Semei Pérez Cervantes", table: "Mesa 10" },
         ];
 
         function findTable() {
@@ -322,7 +337,12 @@
             }
 
             // Buscar coincidencias parciales
-            const found = guests.find(guest => guest.name.includes(input));
+            console.log('input: ', input);
+            const found = guests.find(guest => {
+                console.log('guest: ', guest);
+                f = guest.name.toLowerCase().includes(input)
+                return f
+            });
 
             if (found) {
                 resultDiv.innerHTML = `<span style="color: #2C3E50;">Hola ${found.name.toUpperCase()}, tu lugar es la:</span> <br> <span style="font-size: 2rem;">${found.table}</span>`;
